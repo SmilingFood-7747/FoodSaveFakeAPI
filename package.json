@@ -1,0 +1,14 @@
+{
+  "name": "foodsave-fake-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Fake API local de FoodSave",
+  "type": "commonjs",
+  "scripts": {
+    "server": "json-server --watch db.json --host 0.0.0.0 --port 3000",
+    "start": "node -e \"require('child_process').spawn(process.execPath, [require.resolve('json-server/lib/cli/bin.js'), '--watch', 'db.json', '--host', '0.0.0.0', '--port', process.env.PORT || '3000'], { stdio: 'inherit' }).on('exit', code => process.exit(code ?? 1))\""
+  },
+  "dependencies": {
+    "json-server": "0.17.4"
+  }
+}
