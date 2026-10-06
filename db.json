@@ -133,7 +133,7 @@
       "originalPrice": 24,
       "offerPrice": 10,
       "initialUnits": 5,
-      "availableUnits": 5,
+      "availableUnits": 4,
       "pickupStartAt": "2026-10-06T18:25:26.594Z",
       "pickupEndAt": "2026-10-07T17:55:26.594Z",
       "expiresAt": "2026-10-07T17:55:26.594Z",
@@ -245,12 +245,182 @@
       "commissionAmount": 0.8,
       "customerDiscountAmount": 0,
       "customerPaidAmount": 16
+    },
+    {
+      "id": 2,
+      "offerId": 2,
+      "businessId": 2,
+      "customerUserId": 1,
+      "quantity": 1,
+      "unitPrice": 10,
+      "originalUnitPrice": 24,
+      "pickupCode": "FS-DEMO02",
+      "pickupStartAt": "2026-10-06T18:25:26.594Z",
+      "pickupDeadlineAt": "2026-10-07T17:55:26.594Z",
+      "status": "COLLECTED",
+      "createdAt": "2026-10-06T18:30:00.000Z",
+      "collectedAt": "2026-10-06T19:00:00.000Z",
+      "commissionRate": 5,
+      "commissionAmount": 0.5,
+      "customerDiscountRate": 5,
+      "customerDiscountAmount": 0.5,
+      "customerPaidAmount": 9.5,
+      "discountPeriodStartAt": "2026-10-06T17:30:00.000Z"
     }
   ],
-  "notifications": [],
-  "reviews": [],
-  "requests": [],
-  "preferences": [],
-  "subscriptions": [],
-  "subscriptionCharges": []
+  "notifications": [
+    {
+      "id": 1,
+      "recipientAccountId": 1,
+      "reservationId": 1,
+      "type": "RESERVATION_CONFIRMED",
+      "titleKey": "notice.confirmed",
+      "body": "Almuerzo limeño · FS-DEMO01",
+      "createdAt": "2026-10-06T15:25:26.594Z",
+      "readAt": "2026-10-06T15:30:00.000Z"
+    },
+    {
+      "id": 2,
+      "recipientAccountId": 2,
+      "reservationId": 1,
+      "type": "NEW_RESERVATION",
+      "titleKey": "notice.newReservation",
+      "body": "Almuerzo limeño · 1",
+      "createdAt": "2026-10-06T15:25:26.594Z"
+    },
+    {
+      "id": 3,
+      "recipientAccountId": 1,
+      "reservationId": 2,
+      "type": "RESERVATION_CONFIRMED",
+      "titleKey": "notice.confirmed",
+      "body": "Bolsa de panadería · FS-DEMO02",
+      "createdAt": "2026-10-06T18:30:00.000Z"
+    },
+    {
+      "id": 4,
+      "recipientAccountId": 100,
+      "reservationId": 2,
+      "type": "NEW_RESERVATION",
+      "titleKey": "notice.newReservation",
+      "body": "Bolsa de panadería · 1",
+      "createdAt": "2026-10-06T18:30:00.000Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "reservationId": 1,
+      "rating": 5,
+      "comment": "Buena porción y recojo rápido. La comida estaba fresca.",
+      "createdAt": "2026-10-06T17:05:00.000Z"
+    },
+    {
+      "id": 2,
+      "reservationId": 2,
+      "rating": 4,
+      "comment": "El pan estaba fresco y la bolsa tenía una buena variedad.",
+      "createdAt": "2026-10-06T19:10:00.000Z"
+    }
+  ],
+  "requests": [
+    {
+      "id": 1,
+      "requesterAccountId": 1,
+      "reservationId": 1,
+      "subject": "Consulta sobre el recojo",
+      "description": "Quisiera saber si puedo llevar mi propio recipiente para mi siguiente recojo.",
+      "status": "OPEN",
+      "createdAt": "2026-10-06T17:10:00.000Z"
+    },
+    {
+      "id": 2,
+      "requesterAccountId": 2,
+      "subject": "Consulta sobre el reporte CSV",
+      "description": "Necesito ayuda para interpretar el desglose de ingresos y comisiones del reporte de mi negocio.",
+      "status": "OPEN",
+      "createdAt": "2026-10-06T18:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "requesterAccountId": 100,
+      "subject": "Actualizar datos de la panadería",
+      "description": "Solicité orientación para cambiar el teléfono de contacto desde mi perfil de negocio.",
+      "status": "CLOSED",
+      "createdAt": "2026-10-06T16:00:00.000Z"
+    }
+  ],
+  "preferences": [
+    {
+      "id": 1,
+      "accountId": 1,
+      "emailEnabled": false,
+      "pushEnabled": false,
+      "remindersEnabled": true
+    },
+    {
+      "id": 2,
+      "accountId": 2,
+      "emailEnabled": false,
+      "pushEnabled": false,
+      "remindersEnabled": true
+    },
+    {
+      "id": 100,
+      "accountId": 100,
+      "emailEnabled": false,
+      "pushEnabled": false,
+      "remindersEnabled": false
+    }
+  ],
+  "subscriptions": [
+    {
+      "id": 1,
+      "accountId": 1,
+      "audience": "CUSTOMER",
+      "planId": "PLUS",
+      "startsAt": "2026-10-06T17:30:00.000Z",
+      "expiresAt": "2026-11-06T17:30:00.000Z"
+    },
+    {
+      "id": 2,
+      "accountId": 2,
+      "audience": "BUSINESS_OWNER",
+      "planId": "PLUS",
+      "startsAt": "2026-10-06T17:30:00.000Z",
+      "expiresAt": "2026-11-06T17:30:00.000Z"
+    },
+    {
+      "id": 3,
+      "accountId": 100,
+      "audience": "BUSINESS_OWNER",
+      "planId": "FREE",
+      "startsAt": "2026-10-06T17:30:00.000Z",
+      "expiresAt": null
+    }
+  ],
+  "subscriptionCharges": [
+    {
+      "id": 1,
+      "accountId": 1,
+      "audience": "CUSTOMER",
+      "planId": "PLUS",
+      "amount": 9.9,
+      "createdAt": "2026-10-06T17:30:00.000Z",
+      "periodStartAt": "2026-10-06T17:30:00.000Z",
+      "periodEndAt": "2026-11-06T17:30:00.000Z",
+      "status": "SIMULATED"
+    },
+    {
+      "id": 2,
+      "accountId": 2,
+      "audience": "BUSINESS_OWNER",
+      "planId": "PLUS",
+      "amount": 29,
+      "createdAt": "2026-10-06T17:30:00.000Z",
+      "periodStartAt": "2026-10-06T17:30:00.000Z",
+      "periodEndAt": "2026-11-06T17:30:00.000Z",
+      "status": "SIMULATED"
+    }
+  ]
 }
