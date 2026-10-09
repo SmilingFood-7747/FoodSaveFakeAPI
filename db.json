@@ -93,7 +93,8 @@
       "longitude": -77.03,
       "contactPhone": "999333444",
       "pickupConditions": "Trae tu código de recojo. Recoge en el mostrador.",
-      "isActive": true
+      "isActive": true,
+      "plusPartner": true
     },
     {
       "id": 2,
@@ -129,7 +130,8 @@
       "longitude": -77.023,
       "contactPhone": "999777888",
       "pickupConditions": "Muestra tu código en el mostrador.",
-      "isActive": true
+      "isActive": true,
+      "plusPartner": true
     },
     {
       "id": 5,
@@ -184,8 +186,8 @@
       "initialUnits": 8,
       "availableUnits": 8,
       "pickupStartAt": "2026-10-06T17:40:26.594Z",
-      "pickupEndAt": "2026-10-07T17:55:26.594Z",
-      "expiresAt": "2026-10-07T17:55:26.594Z",
+      "pickupEndAt": "2027-10-09T00:57:07.734Z",
+      "expiresAt": "2027-10-09T00:57:07.734Z",
       "status": "ACTIVE",
       "image": "/assets/pollo-arroz.png"
     },
@@ -201,8 +203,8 @@
       "initialUnits": 5,
       "availableUnits": 4,
       "pickupStartAt": "2026-10-06T18:25:26.594Z",
-      "pickupEndAt": "2026-10-07T17:55:26.594Z",
-      "expiresAt": "2026-10-07T17:55:26.594Z",
+      "pickupEndAt": "2027-10-09T00:57:07.734Z",
+      "expiresAt": "2027-10-09T00:57:07.734Z",
       "status": "ACTIVE",
       "image": "/assets/panaderia.png"
     },
@@ -218,8 +220,8 @@
       "initialUnits": 4,
       "availableUnits": 4,
       "pickupStartAt": "2026-10-06T17:40:26.594Z",
-      "pickupEndAt": "2026-10-07T17:55:26.594Z",
-      "expiresAt": "2026-10-07T17:55:26.594Z",
+      "pickupEndAt": "2027-10-09T00:57:07.734Z",
+      "expiresAt": "2027-10-09T00:57:07.734Z",
       "status": "ACTIVE",
       "image": "/assets/bowl-vegetariano.png"
     },
@@ -235,8 +237,8 @@
       "initialUnits": 6,
       "availableUnits": 6,
       "pickupStartAt": "2026-10-06T18:25:26.594Z",
-      "pickupEndAt": "2026-10-07T17:55:26.594Z",
-      "expiresAt": "2026-10-07T17:55:26.594Z",
+      "pickupEndAt": "2027-10-09T00:57:07.734Z",
+      "expiresAt": "2027-10-09T00:57:07.734Z",
       "status": "ACTIVE",
       "image": "/assets/almuerzo-criollo.png"
     },
@@ -252,8 +254,8 @@
       "initialUnits": 3,
       "availableUnits": 3,
       "pickupStartAt": "2026-10-06T17:40:26.594Z",
-      "pickupEndAt": "2026-10-07T17:55:26.594Z",
-      "expiresAt": "2026-10-07T17:55:26.594Z",
+      "pickupEndAt": "2027-10-09T00:57:07.734Z",
+      "expiresAt": "2027-10-09T00:57:07.734Z",
       "status": "ACTIVE",
       "image": "/assets/caja-postres.png"
     },
@@ -269,8 +271,8 @@
       "initialUnits": 7,
       "availableUnits": 7,
       "pickupStartAt": "2026-10-06T18:25:26.594Z",
-      "pickupEndAt": "2026-10-07T17:55:26.594Z",
-      "expiresAt": "2026-10-07T17:55:26.594Z",
+      "pickupEndAt": "2027-10-09T00:57:07.734Z",
+      "expiresAt": "2027-10-09T00:57:07.734Z",
       "status": "ACTIVE",
       "image": "/assets/arroz-verduras.png"
     },
@@ -286,8 +288,8 @@
       "initialUnits": 1,
       "availableUnits": 0,
       "pickupStartAt": "2026-10-06T18:25:26.594Z",
-      "pickupEndAt": "2026-10-07T17:55:26.594Z",
-      "expiresAt": "2026-10-07T17:55:26.594Z",
+      "pickupEndAt": "2027-10-09T00:57:07.734Z",
+      "expiresAt": "2027-10-09T00:57:07.734Z",
       "status": "ACTIVE",
       "image": ""
     },
@@ -344,6 +346,42 @@
       "status": "ACTIVE",
       "image": "",
       "plusExclusive": false
+    },
+    {
+      "id": 12,
+      "businessId": 1,
+      "plusExclusive": true,
+      "category": "meals",
+      "title": "Menú especial de la casa",
+      "description": "Selección especial de la cocina con plato principal, guarnición y postre del día. Exclusiva para clientes foodSavePlus.",
+      "allergens": "Leche, huevos",
+      "originalPrice": 48,
+      "offerPrice": 24,
+      "initialUnits": 4,
+      "availableUnits": 4,
+      "pickupStartAt": "2026-10-09T00:42:07.734Z",
+      "pickupEndAt": "2027-10-09T00:57:07.734Z",
+      "expiresAt": "2027-10-09T00:57:07.734Z",
+      "status": "ACTIVE",
+      "image": "/assets/pollo-arroz.png"
+    },
+    {
+      "id": 13,
+      "businessId": 4,
+      "plusExclusive": true,
+      "category": "vegetarian",
+      "title": "Bowl especial de temporada",
+      "description": "Selección de quinua, verduras de temporada y complementos de la casa. Exclusiva para clientes foodSavePlus.",
+      "allergens": "Frutos secos",
+      "originalPrice": 40,
+      "offerPrice": 20,
+      "initialUnits": 3,
+      "availableUnits": 3,
+      "pickupStartAt": "2026-10-09T01:27:07.734Z",
+      "pickupEndAt": "2027-10-09T00:57:07.734Z",
+      "expiresAt": "2027-10-09T00:57:07.734Z",
+      "status": "ACTIVE",
+      "image": "/assets/bowl-vegetariano.png"
     }
   ],
   "reservations": [
