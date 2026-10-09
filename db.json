@@ -53,6 +53,33 @@
       "role": "ADMIN",
       "passwordHash": "",
       "salt": "foodsave-demo-admin"
+    },
+    {
+      "id": 104,
+      "fullName": "Responsable de Sabor San Borja",
+      "email": "sanborja@foodsave.test",
+      "phone": "999888101",
+      "role": "BUSINESS_OWNER",
+      "passwordHash": "048357821a984a10a206a990977fc24c50f30bb934d1b2da10599cb14527acd6",
+      "salt": "foodsave-demo-sanborja"
+    },
+    {
+      "id": 105,
+      "fullName": "Responsable de La Mesa de Santa Anita",
+      "email": "santaanita@foodsave.test",
+      "phone": "999888102",
+      "role": "BUSINESS_OWNER",
+      "passwordHash": "6af1897b3db9c70488b249c357ace5ad69384fa20fa99483b34ead6a8847b95d",
+      "salt": "foodsave-demo-santaanita"
+    },
+    {
+      "id": 106,
+      "fullName": "Responsable de Sazón de San Martín",
+      "email": "sanmartin@foodsave.test",
+      "phone": "999888103",
+      "role": "BUSINESS_OWNER",
+      "passwordHash": "56dd6b03588bd3c913ec7e0d3c61e8dd7c8c0bf02e8e049cf46127d97ac23626",
+      "salt": "foodsave-demo-sanmartin"
     }
   ],
   "businesses": [
@@ -103,6 +130,45 @@
       "contactPhone": "999777888",
       "pickupConditions": "Muestra tu código en el mostrador.",
       "isActive": true
+    },
+    {
+      "id": 5,
+      "ownerAccountId": 104,
+      "name": "Sabor San Borja",
+      "district": "San Borja",
+      "address": "Av. San Borja Norte (ubicación de prueba)",
+      "latitude": -12.0915,
+      "longitude": -76.9975,
+      "contactPhone": "999888101",
+      "pickupConditions": "Ubicación de demostración: confirma la dirección exacta con el negocio antes del recojo. Presenta tu código en el mostrador.",
+      "isActive": true,
+      "plusPartner": false
+    },
+    {
+      "id": 6,
+      "ownerAccountId": 105,
+      "name": "La Mesa de Santa Anita",
+      "district": "Santa Anita",
+      "address": "Av. Los Eucaliptos (ubicación de prueba)",
+      "latitude": -12.043,
+      "longitude": -76.971,
+      "contactPhone": "999888102",
+      "pickupConditions": "Ubicación de demostración: confirma la dirección exacta con el negocio antes del recojo. Presenta tu código en el mostrador.",
+      "isActive": true,
+      "plusPartner": false
+    },
+    {
+      "id": 7,
+      "ownerAccountId": 106,
+      "name": "Sazón de San Martín",
+      "district": "San Martín de Porres",
+      "address": "Av. Perú (ubicación de prueba)",
+      "latitude": -12.032,
+      "longitude": -77.082,
+      "contactPhone": "999888103",
+      "pickupConditions": "Ubicación de demostración: confirma la dirección exacta con el negocio antes del recojo. Presenta tu código en el mostrador.",
+      "isActive": true,
+      "plusPartner": false
     }
   ],
   "offers": [
@@ -224,6 +290,60 @@
       "expiresAt": "2026-10-07T17:55:26.594Z",
       "status": "ACTIVE",
       "image": ""
+    },
+    {
+      "id": 9,
+      "businessId": 5,
+      "category": "meals",
+      "title": "Menú casero de San Borja",
+      "description": "Oferta de demostración de Sabor San Borja: una porción de comida casera. Consulta al negocio los platos disponibles.",
+      "allergens": "Consulta al restaurante",
+      "originalPrice": 30,
+      "offerPrice": 15,
+      "initialUnits": 5,
+      "availableUnits": 5,
+      "pickupStartAt": "2026-10-09T00:27:50.050Z",
+      "pickupEndAt": "2027-10-09T00:42:50.050Z",
+      "expiresAt": "2027-10-09T00:42:50.050Z",
+      "status": "ACTIVE",
+      "image": "",
+      "plusExclusive": false
+    },
+    {
+      "id": 10,
+      "businessId": 6,
+      "category": "meals",
+      "title": "Almuerzo casero de Santa Anita",
+      "description": "Oferta de demostración de La Mesa de Santa Anita: una porción de comida casera. Consulta al negocio los platos disponibles.",
+      "allergens": "Consulta al restaurante",
+      "originalPrice": 26,
+      "offerPrice": 13,
+      "initialUnits": 6,
+      "availableUnits": 6,
+      "pickupStartAt": "2026-10-09T00:27:50.050Z",
+      "pickupEndAt": "2027-10-09T00:42:50.050Z",
+      "expiresAt": "2027-10-09T00:42:50.050Z",
+      "status": "ACTIVE",
+      "image": "",
+      "plusExclusive": false
+    },
+    {
+      "id": 11,
+      "businessId": 7,
+      "category": "meals",
+      "title": "Menú del día de San Martín",
+      "description": "Oferta de demostración de Sazón de San Martín: una porción de comida casera. Consulta al negocio los platos disponibles.",
+      "allergens": "Consulta al restaurante",
+      "originalPrice": 28,
+      "offerPrice": 14,
+      "initialUnits": 5,
+      "availableUnits": 5,
+      "pickupStartAt": "2026-10-09T00:27:50.050Z",
+      "pickupEndAt": "2027-10-09T00:42:50.050Z",
+      "expiresAt": "2027-10-09T00:42:50.050Z",
+      "status": "ACTIVE",
+      "image": "",
+      "plusExclusive": false
     }
   ],
   "reservations": [
@@ -371,6 +491,30 @@
       "emailEnabled": false,
       "pushEnabled": false,
       "remindersEnabled": false
+    },
+    {
+      "id": 104,
+      "accountId": 104,
+      "emailEnabled": false,
+      "pushEnabled": false,
+      "remindersEnabled": true,
+      "nearbyOffersEnabled": true
+    },
+    {
+      "id": 105,
+      "accountId": 105,
+      "emailEnabled": false,
+      "pushEnabled": false,
+      "remindersEnabled": true,
+      "nearbyOffersEnabled": true
+    },
+    {
+      "id": 106,
+      "accountId": 106,
+      "emailEnabled": false,
+      "pushEnabled": false,
+      "remindersEnabled": true,
+      "nearbyOffersEnabled": true
     }
   ],
   "subscriptions": [
@@ -396,6 +540,30 @@
       "audience": "BUSINESS_OWNER",
       "planId": "FREE",
       "startsAt": "2026-10-06T17:30:00.000Z",
+      "expiresAt": null
+    },
+    {
+      "id": 4,
+      "accountId": 104,
+      "audience": "BUSINESS_OWNER",
+      "planId": "FREE",
+      "startsAt": "2026-10-09T00:42:50.050Z",
+      "expiresAt": null
+    },
+    {
+      "id": 5,
+      "accountId": 105,
+      "audience": "BUSINESS_OWNER",
+      "planId": "FREE",
+      "startsAt": "2026-10-09T00:42:50.050Z",
+      "expiresAt": null
+    },
+    {
+      "id": 6,
+      "accountId": 106,
+      "audience": "BUSINESS_OWNER",
+      "planId": "FREE",
+      "startsAt": "2026-10-09T00:42:50.050Z",
       "expiresAt": null
     }
   ],
